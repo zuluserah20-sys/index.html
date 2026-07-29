@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<!-- saved from url=(0053)http://localhost/faith-hope-love/index.php#outreaches -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Faith Hope Love Charity Organization</title>
+  
+  <!-- Google Font: Montserrat -->
+  <link href="./Faith Hope Love Charity Organization_files/css2" rel="stylesheet">
+  
+  <style>
+    /* ==========================================
+       RESET & FOREST EMERALD COLOR PALETTE
+       ========================================== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --primary: #064E3B;       /* Deep Forest Emerald */
+      --secondary: #10B981;     /* Vibrant Mint Green */
+      --accent: #F59E0B;        /* Warm Gold */
+      --highlight: #0284C7;     /* Bright Ocean Blue */
+      --dark: #022C22;          /* Ultra Dark Emerald */
+      --light-bg: #F0FDF4;      /* Soft Mint Tint / Light Sage */
+      --white: #FFFFFF;
+      --text: #1F2937;
+      --radius: 16px;
+      --shadow: 0 10px 30px rgba(6, 78, 59, 0.08);
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: var(--light-bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    /* ==========================================
+       NAVIGATION
+       ========================================== */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.2rem 8%;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    }
+
+    .logo {
+      font-size: 1.3rem;
+      font-weight: 800;
+      color: var(--primary);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .nav-links {
+      display: flex;
+      list-style: none;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--dark);
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: var(--secondary);
+    }
+
+    .btn-nav {
+      background: var(--primary);
+      color: var(--white) !important;
+      padding: 8px 18px;
+      border-radius: 50px;
+    }
+
+    .btn-nav:hover {
+      background: var(--dark);
+    }
+
+    /* ==========================================
+       HERO SECTION
+       ========================================== */
+    .hero {
+      position: relative;
+      background: linear-gradient(135deg, var(--primary), #047857);
+      color: var(--white);
+      padding: 90px 20px;
+      text-align: center;
+      border-bottom-left-radius: 40px;
+      border-bottom-right-radius: 40px;
+      overflow: hidden;
+    }
+
+    .hero-content {
+      max-width: 850px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 2;
+    }
+
+    .badge {
+      background: rgba(255, 255, 255, 0.2);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      padding: 6px 18px;
+      border-radius: 30px;
+      font-weight: 700;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      display: inline-block;
+      margin-bottom: 15px;
+      color: var(--accent);
+    }
+
+    .hero h1 {
+      font-size: 2.6rem;
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 15px;
+    }
+
+    .tagline {
+      font-size: 1.15rem;
+      font-weight: 600;
+      opacity: 0.95;
+      margin-bottom: 25px;
+    }
+
+    .hero-btns {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+    }
+
+    /* ==========================================
+       BUTTONS
+       ========================================== */
+    .btn {
+      display: inline-block;
+      padding: 12px 28px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 700;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    .btn-primary {
+      background-color: var(--accent);
+      color: var(--dark);
+    }
+
+    .btn-secondary {
+      background-color: var(--white);
+      color: var(--primary);
+    }
+
+    .btn-whatsapp {
+      background-color: #25D366;
+      color: var(--white);
+      font-size: 1.1rem;
+      padding: 15px 35px;
+      margin-top: 15px;
+    }
+
+    /* ==========================================
+       LAYOUT & CARDS
+       ========================================== */
+    .container {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    .card {
+      background: var(--white);
+      padding: 40px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .section-header {
+      margin-bottom: 20px;
+    }
+
+    .section-header h2 {
+      font-size: 1.8rem;
+      color: var(--dark);
+    }
+
+    .underline {
+      width: 50px;
+      height: 4px;
+      background: var(--accent);
+      border-radius: 2px;
+      margin-top: 6px;
+    }
+
+    /* ==========================================
+       SCRIPTURE & FOUNDATION
+       ========================================== */
+    .scripture-box {
+      background: #ECFDF5;
+      border-left: 5px solid var(--secondary);
+      padding: 20px;
+      border-radius: 8px;
+      margin: 20px 0;
+      font-style: italic;
+    }
+
+    .scripture-box p {
+      margin-bottom: 10px;
+      font-weight: 600;
+      color: var(--dark);
+    }
+
+    .scripture-box p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* ==========================================
+       VISION & MISSION GRID
+       ========================================== */
+    .vm-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .vm-card {
+      background: var(--light-bg);
+      padding: 25px;
+      border-radius: 12px;
+      border-top: 4px solid var(--secondary);
+    }
+
+    .vm-card h3 {
+      color: var(--dark);
+      margin-bottom: 10px;
+      font-size: 1.3rem;
+    }
+
+    /* ==========================================
+       CORE PILLARS
+       ========================================== */
+    .pillars-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .pillar-box {
+      background: var(--light-bg);
+      padding: 20px;
+      border-radius: 12px;
+      text-align: center;
+      border: 1px solid rgba(16, 185, 129, 0.2);
+    }
+
+    .pillar-box h4 {
+      color: var(--primary);
+      font-size: 1.2rem;
+      margin-bottom: 8px;
+    }
+
+    /* ==========================================
+       OUTREACH GRID & WHAT WE DO
+       ========================================== */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .outreach-card {
+      text-align: center;
+      border-top: 6px solid var(--primary);
+      transition: transform 0.3s;
+    }
+
+    .outreach-card:hover {
+      transform: translateY(-8px);
+    }
+
+    .outreach-card.relief { border-top-color: var(--primary); }
+    .outreach-card.school { border-top-color: var(--secondary); }
+    .outreach-card.talent { border-top-color: var(--accent); }
+
+    .icon {
+      font-size: 2.8rem;
+      margin-bottom: 15px;
+    }
+
+    .outreach-card h3 {
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+      color: var(--dark);
+    }
+
+    /* ==========================================
+       AWARDS GRID
+       ========================================== */
+    .awards-category {
+      margin-top: 30px;
+    }
+
+    .awards-category h3 {
+      font-size: 1.3rem;
+      color: var(--primary);
+      margin-bottom: 15px;
+      border-left: 4px solid var(--accent);
+      padding-left: 10px;
+    }
+
+    .awards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 15px;
+    }
+
+    .award-box {
+      background: var(--light-bg);
+      border: 1px solid rgba(16, 185, 129, 0.2);
+      padding: 20px;
+      border-radius: 12px;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .award-box:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 15px rgba(6, 78, 59, 0.12);
+      border-color: var(--primary);
+    }
+
+    .award-icon {
+      font-size: 1.8rem;
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    .award-box h4 {
+      font-size: 1.05rem;
+      color: var(--dark);
+      margin-bottom: 6px;
+      font-weight: 700;
+    }
+
+    .award-box p {
+      font-size: 0.88rem;
+      color: var(--text);
+      line-height: 1.4;
+    }
+
+    .highlight-award {
+      background: #FEF3C7;
+      border: 2px solid var(--accent);
+    }
+
+    /* ==========================================
+       CTA & FOOTER
+       ========================================== */
+    .cta-card {
+      background: linear-gradient(135deg, var(--dark), #064E3B);
+      color: var(--white);
+      text-align: center;
+    }
+
+    .cta-card h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .cta-card p {
+      max-width: 600px;
+      margin: 0 auto 15px;
+      opacity: 0.9;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      background-color: var(--dark);
+      color: var(--white);
+      margin-top: 40px;
+    }
+
+    .footer-sub {
+      color: var(--accent);
+      font-weight: 700;
+      margin-top: 5px;
+      text-transform: uppercase;
+      font-size: 0.85rem;
+    }
+
+    /* ==========================================
+       RESPONSIVE DESIGN
+       ========================================== */
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 2rem; }
+      .navbar { flex-direction: column; gap: 15px; }
+      .nav-links { gap: 10px; font-size: 0.9rem; }
+      .card { padding: 25px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar">
+    <div class="logo">Faith Hope Love</div>
+    <ul class="nav-links">
+      <li><a href="http://localhost/faith-hope-love/index.php#about">About Us</a></li>
+      <li><a href="http://localhost/faith-hope-love/index.php#pillars">Pillars</a></li>
+      <li><a href="http://localhost/faith-hope-love/index.php#outreaches">What We Do</a></li>
+      <li><a href="http://localhost/faith-hope-love/index.php#awards">Awards</a></li>
+      <li><a href="https://chat.whatsapp.com/LeI1fGjX5cnEilJkqgnM5x?s=sw&amp;p=a&amp;ilr=1&amp;amv=3" target="_blank" class="btn-nav">Join WhatsApp</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <header class="hero">
+    <div class="hero-content">
+      <span class="badge">Theme: Let Love Lead</span>
+      <h1>Faith Hope Love Charity Organization</h1>
+      <p class="tagline">Faith in our hearts, Hope for tomorrow, Love for all, Charity in action.</p>
+      <div class="hero-btns">
+        <a href="https://www.facebook.com/share/1DbouHJ2fo/" target="_blank" class="btn btn-primary">Get Involved</a>
+        <a href="http://localhost/faith-hope-love/index.php#outreaches" class="btn btn-secondary">Our Work</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- ABOUT US SECTION -->
+    <section id="about" class="card">
+      <div class="section-header">
+        <h2>About Us</h2>
+        <div class="underline"></div>
+      </div>
+      <p>
+        <strong>Faith Hope Love Charity Organization</strong> is a faith-based community initiative founded on <strong>May 10, 2023</strong> by <strong>Mr. Gideon Lwamba</strong> in <strong>Lusaka, Zambia</strong>.
+      </p>
+      <p>
+        While we do not operate out of a single fixed physical location, we actively move across local communities to bring aid, hope, and practical assistance directly to those who need it most. Our foundation rests on the truth that <em>we are saved to serve</em>.
+      </p>
+
+      <div class="scripture-box">
+        <p>"Three things will last forever—faith, hope, and love—and the greatest of these is love." — 1 Corinthians 13:13</p>
+        <p>"Those who are gracious to the poor lend to the Lord, and the Lord will fully repay them." — Proverbs 19:17</p>
+      </div>
+
+      <div class="vm-grid">
+        <div class="vm-card">
+          <h3>Our Vision</h3>
+          <p>A transformed, hopeful community where no individual is left without food, shelter, or care, and where every person is empowered to discover and fulfill their God-given potential through faith, hope, and love.</p>
+        </div>
+        <div class="vm-card">
+          <h3>Our Mission</h3>
+          <p>To reflect God's love by providing essential physical relief, educational support, and talent development to those in need—empowering individuals, restoring dignity, and serving our community with compassion and charity in action.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CORE PILLARS SECTION -->
+    <section id="pillars" class="card">
+      <div class="section-header">
+        <h2>Our Core Pillars</h2>
+        <div class="underline"></div>
+      </div>
+      <div class="pillars-grid">
+        <div class="pillar-box">
+          <h4>Faith</h4>
+          <p>Assurance and conviction, moving forward with unwavering trust in God’s guidance.</p>
+        </div>
+        <div class="pillar-box">
+          <h4>Hope</h4>
+          <p>Confident expectation in God's faithfulness, inspiring a brighter vision for tomorrow.</p>
+        </div>
+        <div class="pillar-box">
+          <h4>Love</h4>
+          <p>Actions of kindness, unconditional acceptance, and unity in every interaction.</p>
+        </div>
+        <div class="pillar-box">
+          <h4>Charity</h4>
+          <p>Putting our beliefs into motion through active, tangible community service.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHAT WE DO / OUTREACHES SECTION -->
+    <section id="outreaches">
+      <div class="section-header">
+        <h2>What We Do</h2>
+        <div class="underline"></div>
+      </div>
+      <div class="grid outreach-grid">
+        <div class="card outreach-card relief">
+          <div class="icon">🤝</div>
+          <h3>Essential Relief Aid</h3>
+          <p>Feeding the hungry, quenching the thirsty, clothing the needy, sheltering the homeless, and ministering to the sick through street and orphanage outreaches.</p>
+        </div>
+
+        <div class="card outreach-card school">
+          <div class="icon">📚</div>
+          <h3>Educational Support</h3>
+          <p>Providing learning opportunities, school materials, and mentorship to children and youth in local schools to help them secure a brighter future.</p>
+        </div>
+
+        <div class="card outreach-card talent">
+          <div class="icon">🌟</div>
+          <h3>Talent Recognition</h3>
+          <p>Identifying, nurturing, and promoting latent gifts and skills within our community to foster self-reliance, confidence, and purpose.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- AWARDS SECTION -->
+    <section id="awards" class="card feature-card">
+      <div class="section-header">
+        <h2>End-of-Year Member Award Ceremonies 🏆</h2>
+        <div class="underline"></div>
+      </div>
+      <p>
+        Every year, we celebrate the incredible individuals and partners who power our cause. Here are the official award categories and criteria for our upcoming ceremony!
+      </p>
+
+      <div class="awards-category">
+        <h3>🌟 Volunteer Honors</h3>
+        <div class="awards-grid">
+          <div class="award-box">
+            <span class="award-icon">🥇</span>
+            <h4>Volunteer of the Year</h4>
+            <p>Recognizes outstanding overall dedication, leadership, and community impact throughout the year.</p>
+          </div>
+          <div class="award-box">
+            <span class="award-icon">🌟</span>
+            <h4>Rising Star Volunteer</h4>
+            <p>Honors a new volunteer who quickly made a significant contribution to our outreaches.</p>
+          </div>
+          <div class="award-box">
+            <span class="award-icon">🤝</span>
+            <h4>Teamwork Award</h4>
+            <p>Acknowledges a group or committee of volunteers who collaborated exceptionally well together.</p>
+          </div>
+          <div class="award-box">
+            <span class="award-icon">📈</span>
+            <h4>Most Improved Volunteer</h4>
+            <p>Celebrates a volunteer who has shown tremendous personal growth and increased initiative.</p>
+          </div>
+          <div class="award-box">
+            <span class="award-icon">⏳</span>
+            <h4>Most Dedicated Volunteer</h4>
+            <p>Recognizes consistent, reliable, and steadfast effort in all our activities.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="awards-category">
+        <h3>💎 Donors &amp; Corporate Partners</h3>
+        <div class="awards-grid">
+          <div class="award-box">
+            <span class="award-icon">🏛️</span>
+            <h4>Philanthropist of the Year</h4>
+            <p>Honors a major donor whose generous contribution made a transformative impact.</p>
+          </div>
+          <div class="award-box">
+            <span class="award-icon">🏢</span>
+            <h4>Corporate Partner of the Year</h4>
+            <p>Recognizes an organization or business that provided significant financial or material support.</p>
+          </div>
+          <div class="award-box">
+            <span class="award-icon">🌱</span>
+            <h4>Emerging Philanthropist</h4>
+            <p>Honors a young or new donor showing exceptional commitment and future potential.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="awards-category">
+        <h3>🚀 Internal &amp; Team Leadership</h3>
+        <div class="awards-grid">
+          <div class="award-box">
+            <span class="award-icon">⚽</span>
+            <h4>Team Player Award</h4>
+            <p>Honors a team member who consistently fosters unity, encouragement, and seamless collaboration.</p>
+          </div>
+          <div class="award-box">
+            <span class="award-icon">💡</span>
+            <h4>Innovation Award</h4>
+            <p>Acknowledges a member who introduced fresh ideas, new tools, or creative outreach methods.</p>
+          </div>
+          <div class="award-box">
+            <span class="award-icon">👑</span>
+            <h4>Leadership Award</h4>
+            <p>Recognizes a key member who demonstrates exceptional leadership, guidance, and responsibility.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="awards-category">
+        <h3>🌍 Special Recognition</h3>
+        <div class="awards-grid">
+          <div class="award-box">
+            <span class="award-icon">📲</span>
+            <h4>Social Media Engagement Award</h4>
+            <p>Recognizes a member who actively boosts our visibility by sharing, liking, commenting, and tagging our posts.</p>
+          </div>
+          <div class="award-box highlight-award">
+            <span class="award-icon">🕊️</span>
+            <h4>Humanitarian of the Year</h4>
+            <p>Our highest honor, awarded to someone demonstrating extraordinary compassion and service to alleviate suffering.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- JOIN WHATSAPP CTA -->
+    <section id="join" class="card cta-card">
+      <h2>Be Part of the Movement!</h2>
+      <p>We coordinate all our activities and community events through our active WhatsApp group. Join us today and help us let love lead!</p>
+      <a href="https://chat.whatsapp.com/LeI1fGjX5cnEilJkqgnM5x?s=sw&amp;p=a&amp;ilr=1&amp;amv=3" target="_blank" class="btn btn-whatsapp">
+        💬 Join Our WhatsApp Group
+      </a>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Faith Hope Love Charity Organization • Lusaka, Zambia</p>
+    <p class="footer-sub">Let Love Lead</p>
+  </footer>
+
+
+</body></html>
